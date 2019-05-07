@@ -1,4 +1,3 @@
-    
 const Discord = require('discord.js');
 
 const Util = require('discord.js');
@@ -301,6 +300,7 @@ function play(guild, song) {
 	dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
 
 	serverQueue.textChannel.send(`**${song.title}**, is now playing!`);
-}
-
-client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
+	}
+});
+   
+client.login(process.env.BOT_TOKEN);
